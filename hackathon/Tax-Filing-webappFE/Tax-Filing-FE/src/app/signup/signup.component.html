@@ -1,0 +1,11 @@
+<div class="container">
+    <div>Choose User Name and Password</div>
+    <div>
+      User Name : <input type="text" name="username" [(ngModel)]="username">
+      Password : <input type="password" name="password" [(ngModel)]="password">
+      Retype Password: <input type="repassword" name="password" [(ngModel)]="repassword">
+    </div>
+    <button (click)=signup() class="btn btn-success">
+      Signup
+    </button>
+  </div>

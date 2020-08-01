@@ -1,0 +1,283 @@
+<head>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+</head>
+
+
+<h2>WORKSHEET</h2>
+<p>Summary of your deductions</p>
+
+<table>
+    <tr>
+        <th> </th>
+        <th> </th>
+        <th> </th>
+        <th> </th>
+        <th> </th>
+        <th> </th>
+        <th> </th>
+    </tr>
+    <tr>
+        <td>1. Gross Salary</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td>{{Gross_salary}}</td>
+    </tr>
+    <tr>
+        <td>2. Less: Allowances Exempt Under Section 10</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td> &#160; &#160; House Rent Allowance</td>
+        <td> </td>
+        <td> {{HRA}}</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>&#160; &#160; &#160;
+            <b>Total</b>
+        </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td>
+            <b>{{HRA}}</b>
+        </td>
+        <td> </td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>3. Balance (1-2)</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td>{{Gross_salary-HRA}}</td>
+    </tr>
+    <tr>
+        <td>4. Deductions</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>&#160; &#160; &#160; Standard Deductions</td>
+        <td> </td>
+        <td> </td>
+        <td>50000</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>&#160; &#160; &#160; Tax On Employment</td>
+        <td> </td>
+        <td> </td>
+        <td>2500</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>5. Aggregate of 4</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td>52500</td>
+    </tr>
+    <tr>
+        <td>6. Income chargeable under the head 'Salaries' (3-5)</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td>{{Gross_salary-HRA-52500}}</td>
+    </tr>
+    <tr>
+        <td>7. Add: Any other income reported by the employee </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td>{{other_income}}</td>
+    </tr>
+    <tr>
+        <td>&#160; &#160; &#160;
+            <b>Total of above</b>
+        </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td>{{other_income}}</td>
+    </tr>
+    <tr>
+        <td>8. Gross total income(6+7)</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td>{{Gross_salary-HRA-52500+other_income}}</td>
+    </tr>
+    <tr>
+        <td>9. Deductions under Chapter VI-A</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+    </tr>
+    <tr>
+    <td>&#160; &#160; &#160; (A) Section 80C, 80CCC and 80CCD</td>
+    <td> </td>
+    <td>
+        <b>Gross Amount</b>
+    </td>
+    <td>
+        <b>Qualifying Amount</b>
+    </td>
+    <td>
+        <b>Deductible Amount</b>
+    </td>
+    <td> </td>
+    <td> </td>
+    </tr>
+    <tr>
+        <td>&#160; &#160; &#160; &#160; &#160; &#160; (a) Section 80 C</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; a. Provident Fund</td>
+        <td> </td>
+        <td>{{PPF}}</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; b. ELSS</td>
+        <td> </td>
+        <td>{{MF}}</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; b. Life Insurance</td>
+        <td> </td>
+        <td>{{LI}}</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+    </tr>
+    <tr>
+    <td>&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; c. NPS</td>
+    <td> </td>
+    <td> </td>
+    <td>{{NPS}}</td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    </tr>
+    <tr>
+        <td>&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;
+            <b>Total of Section 80C, 80CCC and 80CCD</b>
+        </td>
+        <td> </td>
+        <td>{{NPS+LI+MF+PPF}}</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>&#160; &#160; &#160; (B) Other Sections under Chapter VI-A</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;
+            <b>Total of Other Sections under Chapter VI-A
+            </b>
+        </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>10. Aggregate of deductible amount under Chapter VIA</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td>{{NPS+LI+MF+PPF}}</td>
+    </tr>
+    <tr>
+        <td>11. Total Income (8-10)</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td>{{Gross_salary-HRA-52500+other_income-NPS-LI-MF-PPF}}</td>
+    </tr>
+    <tr>
+        <td>12. Tax on total Income</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td>{{(Gross_salary-HRA-52500+other_income-NPS-LI-MF-PPF-500000)*0.2}}</td>
+    </tr>
+
+</table>

@@ -1,0 +1,756 @@
+[fwBasic]
+status = enabled
+incoming = deny
+outgoing = allow
+routed = disabled
+
+[Rule0]
+ufw_rule = 8080 ALLOW IN Anywhere
+description = presto
+command = /usr/sbin/ufw allow in from any to any port 8080
+policy = allow
+direction = in
+protocol = 
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 8080
+iface = 
+routed = 
+logging = 
+
+[Rule1]
+ufw_rule = 9083 ALLOW IN Anywhere
+description = metastore
+command = /usr/sbin/ufw allow in from any to any port 9083
+policy = allow
+direction = in
+protocol = 
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 9083
+iface = 
+routed = 
+logging = 
+
+[Rule2]
+ufw_rule = 5432 ALLOW IN Anywhere
+description = postgres
+command = /usr/sbin/ufw allow in from any to any port 5432
+policy = allow
+direction = in
+protocol = 
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 5432
+iface = 
+routed = 
+logging = 
+
+[Rule3]
+ufw_rule = 9092 ALLOW IN Anywhere
+description = kafka
+command = /usr/sbin/ufw allow in from any to any port 9092
+policy = allow
+direction = in
+protocol = 
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 9092
+iface = 
+routed = 
+logging = 
+
+[Rule4]
+ufw_rule = 6379 ALLOW IN Anywhere
+description = redis
+command = /usr/sbin/ufw allow in from any to any port 6379
+policy = allow
+direction = in
+protocol = 
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 6379
+iface = 
+routed = 
+logging = 
+
+[Rule5]
+ufw_rule = 9001 ALLOW IN Anywhere
+description = presto2
+command = /usr/sbin/ufw allow in from any to any port 9001
+policy = allow
+direction = in
+protocol = 
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 9001
+iface = 
+routed = 
+logging = 
+
+[Rule6]
+ufw_rule = 2888 ALLOW IN Anywhere
+description = zookeeper1
+command = /usr/sbin/ufw allow in from any to any port 2888
+policy = allow
+direction = in
+protocol = 
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 2888
+iface = 
+routed = 
+logging = 
+
+[Rule7]
+ufw_rule = 2181 ALLOW IN Anywhere
+description = zookeeper2
+command = /usr/sbin/ufw allow in from any to any port 2181
+policy = allow
+direction = in
+protocol = 
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 2181
+iface = 
+routed = 
+logging = 
+
+[Rule8]
+ufw_rule = 3888 ALLOW IN Anywhere
+description = zookeeper3
+command = /usr/sbin/ufw allow in from any to any port 3888
+policy = allow
+direction = in
+protocol = 
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 3888
+iface = 
+routed = 
+logging = 
+
+[Rule9]
+ufw_rule = 3000/tcp ALLOW IN Anywhere
+description = LocalUI
+command = /usr/sbin/ufw allow in proto tcp from any to any port 3000
+policy = allow
+direction = in
+protocol = tcp
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 3000
+iface = 
+routed = 
+logging = 
+
+[Rule10]
+ufw_rule = 8888/tcp ALLOW IN Anywhere
+description = LocalUI2
+command = /usr/sbin/ufw allow in proto tcp from any to any port 8888
+policy = allow
+direction = in
+protocol = tcp
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 8888
+iface = 
+routed = 
+logging = 
+
+[Rule11]
+ufw_rule = 443/tcp ALLOW IN Anywhere
+description = LocalUI2
+command = /usr/sbin/ufw allow in proto tcp from any to any port 443
+policy = allow
+direction = in
+protocol = tcp
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 443
+iface = 
+routed = 
+logging = 
+
+[Rule12]
+ufw_rule = 80/tcp ALLOW IN Anywhere
+description = LocalUI2
+command = /usr/sbin/ufw allow in proto tcp from any to any port 80
+policy = allow
+direction = in
+protocol = tcp
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 80
+iface = 
+routed = 
+logging = 
+
+[Rule13]
+ufw_rule = 9888/tcp ALLOW IN Anywhere
+description = Localstack
+command = /usr/sbin/ufw allow in proto tcp from any to any port 9888
+policy = allow
+direction = in
+protocol = tcp
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 9888
+iface = 
+routed = 
+logging = 
+
+[Rule14]
+ufw_rule = 1030/tcp ALLOW IN Anywhere
+description = LocalBackEnd
+command = /usr/sbin/ufw allow in proto tcp from any to any port 1030
+policy = allow
+direction = in
+protocol = tcp
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 1030
+iface = 
+routed = 
+logging = 
+
+[Rule15]
+ufw_rule = 1031/tcp ALLOW IN Anywhere
+description = LocalBackEnd
+command = /usr/sbin/ufw allow in proto tcp from any to any port 1031
+policy = allow
+direction = in
+protocol = tcp
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 1031
+iface = 
+routed = 
+logging = 
+
+[Rule16]
+ufw_rule = 1032/tcp ALLOW IN Anywhere
+description = LocalBackEnd
+command = /usr/sbin/ufw allow in proto tcp from any to any port 1032
+policy = allow
+direction = in
+protocol = tcp
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 1032
+iface = 
+routed = 
+logging = 
+
+[Rule17]
+ufw_rule = 1033/tcp ALLOW IN Anywhere
+description = LocalBackEnd
+command = /usr/sbin/ufw allow in proto tcp from any to any port 1033
+policy = allow
+direction = in
+protocol = tcp
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 1033
+iface = 
+routed = 
+logging = 
+
+[Rule18]
+ufw_rule = 1034/tcp ALLOW IN Anywhere
+description = LocalBackEnd
+command = /usr/sbin/ufw allow in proto tcp from any to any port 1034
+policy = allow
+direction = in
+protocol = tcp
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 1034
+iface = 
+routed = 
+logging = 
+
+[Rule19]
+ufw_rule = 1035/tcp ALLOW IN Anywhere
+description = LocalBackEnd
+command = /usr/sbin/ufw allow in proto tcp from any to any port 1035
+policy = allow
+direction = in
+protocol = tcp
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 1035
+iface = 
+routed = 
+logging = 
+
+[Rule20]
+ufw_rule = 1036/tcp ALLOW IN Anywhere
+description = LocalBackEnd
+command = /usr/sbin/ufw allow in proto tcp from any to any port 1036
+policy = allow
+direction = in
+protocol = tcp
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 1036
+iface = 
+routed = 
+logging = 
+
+[Rule21]
+ufw_rule = 1037/tcp ALLOW IN Anywhere
+description = LocalBackEnd
+command = /usr/sbin/ufw allow in proto tcp from any to any port 1037
+policy = allow
+direction = in
+protocol = tcp
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 1037
+iface = 
+routed = 
+logging = 
+
+[Rule22]
+ufw_rule = 1038/tcp ALLOW IN Anywhere
+description = LocalBackEnd
+command = /usr/sbin/ufw allow in proto tcp from any to any port 1038
+policy = allow
+direction = in
+protocol = tcp
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 1038
+iface = 
+routed = 
+logging = 
+
+[Rule23]
+ufw_rule = 1039/tcp ALLOW IN Anywhere
+description = LocalBackEnd
+command = /usr/sbin/ufw allow in proto tcp from any to any port 1039
+policy = allow
+direction = in
+protocol = tcp
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 1039
+iface = 
+routed = 
+logging = 
+
+[Rule24]
+ufw_rule = 1230:1240/tcp ALLOW IN Anywhere
+description = LocalBackEnd
+command = /usr/sbin/ufw allow in proto tcp from any to any port 1230:1240
+policy = allow
+direction = in
+protocol = tcp
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 1230:1240
+iface = 
+routed = 
+logging = 
+
+[Rule25]
+ufw_rule = 8080 (v6) ALLOW IN Anywhere (v6)
+description = presto
+command = /usr/sbin/ufw allow in from any to any port 8080
+policy = allow
+direction = in
+protocol = 
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 8080
+iface = 
+routed = 
+logging = 
+
+[Rule26]
+ufw_rule = 9083 (v6) ALLOW IN Anywhere (v6)
+description = metastore
+command = /usr/sbin/ufw allow in from any to any port 9083
+policy = allow
+direction = in
+protocol = 
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 9083
+iface = 
+routed = 
+logging = 
+
+[Rule27]
+ufw_rule = 5432 (v6) ALLOW IN Anywhere (v6)
+description = postgres
+command = /usr/sbin/ufw allow in from any to any port 5432
+policy = allow
+direction = in
+protocol = 
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 5432
+iface = 
+routed = 
+logging = 
+
+[Rule28]
+ufw_rule = 9092 (v6) ALLOW IN Anywhere (v6)
+description = kafka
+command = /usr/sbin/ufw allow in from any to any port 9092
+policy = allow
+direction = in
+protocol = 
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 9092
+iface = 
+routed = 
+logging = 
+
+[Rule29]
+ufw_rule = 6379 (v6) ALLOW IN Anywhere (v6)
+description = redis
+command = /usr/sbin/ufw allow in from any to any port 6379
+policy = allow
+direction = in
+protocol = 
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 6379
+iface = 
+routed = 
+logging = 
+
+[Rule30]
+ufw_rule = 9001 (v6) ALLOW IN Anywhere (v6)
+description = presto2
+command = /usr/sbin/ufw allow in from any to any port 9001
+policy = allow
+direction = in
+protocol = 
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 9001
+iface = 
+routed = 
+logging = 
+
+[Rule31]
+ufw_rule = 2888 (v6) ALLOW IN Anywhere (v6)
+description = zookeeper1
+command = /usr/sbin/ufw allow in from any to any port 2888
+policy = allow
+direction = in
+protocol = 
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 2888
+iface = 
+routed = 
+logging = 
+
+[Rule32]
+ufw_rule = 2181 (v6) ALLOW IN Anywhere (v6)
+description = zookeeper2
+command = /usr/sbin/ufw allow in from any to any port 2181
+policy = allow
+direction = in
+protocol = 
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 2181
+iface = 
+routed = 
+logging = 
+
+[Rule33]
+ufw_rule = 3888 (v6) ALLOW IN Anywhere (v6)
+description = zookeeper3
+command = /usr/sbin/ufw allow in from any to any port 3888
+policy = allow
+direction = in
+protocol = 
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 3888
+iface = 
+routed = 
+logging = 
+
+[Rule34]
+ufw_rule = 3000/tcp (v6) ALLOW IN Anywhere (v6)
+description = LocalUI
+command = /usr/sbin/ufw allow in proto tcp from any to any port 3000
+policy = allow
+direction = in
+protocol = tcp
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 3000
+iface = 
+routed = 
+logging = 
+
+[Rule35]
+ufw_rule = 8888/tcp (v6) ALLOW IN Anywhere (v6)
+description = LocalUI2
+command = /usr/sbin/ufw allow in proto tcp from any to any port 8888
+policy = allow
+direction = in
+protocol = tcp
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 8888
+iface = 
+routed = 
+logging = 
+
+[Rule36]
+ufw_rule = 443/tcp (v6) ALLOW IN Anywhere (v6)
+description = LocalUI2
+command = /usr/sbin/ufw allow in proto tcp from any to any port 443
+policy = allow
+direction = in
+protocol = tcp
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 443
+iface = 
+routed = 
+logging = 
+
+[Rule37]
+ufw_rule = 80/tcp (v6) ALLOW IN Anywhere (v6)
+description = LocalUI2
+command = /usr/sbin/ufw allow in proto tcp from any to any port 80
+policy = allow
+direction = in
+protocol = tcp
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 80
+iface = 
+routed = 
+logging = 
+
+[Rule38]
+ufw_rule = 9888/tcp (v6) ALLOW IN Anywhere (v6)
+description = Localstack
+command = /usr/sbin/ufw allow in proto tcp from any to any port 9888
+policy = allow
+direction = in
+protocol = tcp
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 9888
+iface = 
+routed = 
+logging = 
+
+[Rule39]
+ufw_rule = 1030/tcp (v6) ALLOW IN Anywhere (v6)
+description = LocalBackEnd
+command = /usr/sbin/ufw allow in proto tcp from any to any port 1030
+policy = allow
+direction = in
+protocol = tcp
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 1030
+iface = 
+routed = 
+logging = 
+
+[Rule40]
+ufw_rule = 1031/tcp (v6) ALLOW IN Anywhere (v6)
+description = LocalBackEnd
+command = /usr/sbin/ufw allow in proto tcp from any to any port 1031
+policy = allow
+direction = in
+protocol = tcp
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 1031
+iface = 
+routed = 
+logging = 
+
+[Rule41]
+ufw_rule = 1032/tcp (v6) ALLOW IN Anywhere (v6)
+description = LocalBackEnd
+command = /usr/sbin/ufw allow in proto tcp from any to any port 1032
+policy = allow
+direction = in
+protocol = tcp
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 1032
+iface = 
+routed = 
+logging = 
+
+[Rule42]
+ufw_rule = 1033/tcp (v6) ALLOW IN Anywhere (v6)
+description = LocalBackEnd
+command = /usr/sbin/ufw allow in proto tcp from any to any port 1033
+policy = allow
+direction = in
+protocol = tcp
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 1033
+iface = 
+routed = 
+logging = 
+
+[Rule43]
+ufw_rule = 1034/tcp (v6) ALLOW IN Anywhere (v6)
+description = LocalBackEnd
+command = /usr/sbin/ufw allow in proto tcp from any to any port 1034
+policy = allow
+direction = in
+protocol = tcp
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 1034
+iface = 
+routed = 
+logging = 
+
+[Rule44]
+ufw_rule = 1035/tcp (v6) ALLOW IN Anywhere (v6)
+description = LocalBackEnd
+command = /usr/sbin/ufw allow in proto tcp from any to any port 1035
+policy = allow
+direction = in
+protocol = tcp
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 1035
+iface = 
+routed = 
+logging = 
+
+[Rule45]
+ufw_rule = 1036/tcp (v6) ALLOW IN Anywhere (v6)
+description = LocalBackEnd
+command = /usr/sbin/ufw allow in proto tcp from any to any port 1036
+policy = allow
+direction = in
+protocol = tcp
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 1036
+iface = 
+routed = 
+logging = 
+
+[Rule46]
+ufw_rule = 1037/tcp (v6) ALLOW IN Anywhere (v6)
+description = LocalBackEnd
+command = /usr/sbin/ufw allow in proto tcp from any to any port 1037
+policy = allow
+direction = in
+protocol = tcp
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 1037
+iface = 
+routed = 
+logging = 
+
+[Rule47]
+ufw_rule = 1038/tcp (v6) ALLOW IN Anywhere (v6)
+description = LocalBackEnd
+command = /usr/sbin/ufw allow in proto tcp from any to any port 1038
+policy = allow
+direction = in
+protocol = tcp
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 1038
+iface = 
+routed = 
+logging = 
+
+[Rule48]
+ufw_rule = 1039/tcp (v6) ALLOW IN Anywhere (v6)
+description = LocalBackEnd
+command = /usr/sbin/ufw allow in proto tcp from any to any port 1039
+policy = allow
+direction = in
+protocol = tcp
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 1039
+iface = 
+routed = 
+logging = 
+
+[Rule49]
+ufw_rule = 1230:1240/tcp (v6) ALLOW IN Anywhere (v6)
+description = LocalBackEnd
+command = /usr/sbin/ufw allow in proto tcp from any to any port 1230:1240
+policy = allow
+direction = in
+protocol = tcp
+from_ip = 
+from_port = 
+to_ip = 
+to_port = 1230:1240
+iface = 
+routed = 
+logging = 
+
